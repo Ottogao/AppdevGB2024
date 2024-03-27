@@ -19,3 +19,8 @@ void resetColors(void) {
 	printf("\x1B[0m");
 	fflush(stdout);
 }
+
+void setBGcolor(int color) {
+	printf("\x1B[%dm", color + 10);
+	fflush(stdout);
+}
